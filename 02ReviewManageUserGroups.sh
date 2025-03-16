@@ -5,7 +5,9 @@
 # learner user account needs to be created
 
 
+echo -e "\e[1;31m**Run as Root user**"
 
+echo " "
 
 echo -e "\e[1;93mManage Users and Groups Review Check \e[0m"   
 
@@ -18,7 +20,7 @@ echo " "
 #Task 1 
 
 task1path="/home/learner/teamdata"
-task1cmd=$(find /home/learner -iname teamdata -type d -perm 2770 -print -quit 2> /dev/null)
+task1cmd=$(sudo find /home/learner -iname teamdata -type d -perm 2770 -print -quit 2> /dev/null)
 
 
 
